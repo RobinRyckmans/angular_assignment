@@ -1,0 +1,23 @@
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#details-img {
+  width: 100px;
+  margin-top: 5%;
+}
+
+.details-artistname-trackname {
+  display: flex;
+  flex-direction: row;
+}
+
+#details-track-name {
+  font-style: italic;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+}

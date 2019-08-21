@@ -1,0 +1,12 @@
+<div class="details-container">
+  <a routerLink="/" (click)="resetAllowed()">Go back</a>
+  <img id="details-img" src="{{song?.artworkUrl100}}" alt="Image of {{song.artistName}}">
+  <div class="details-artistname-trackname">
+    <h3 id="details-artist-name">{{song?.artistName}}</h3>
+    <h3 id="details-track-name"> - {{song?.trackName}}</h3>
+  </div>
+  <div class="preview-container">
+    <label>Preview:</label>
+    <audio controls="controls" src="{{song?.previewUrl}}"></audio>
+  </div>
+</div>

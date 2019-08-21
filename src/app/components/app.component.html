@@ -1,0 +1,8 @@
+<div>
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<app-search-music *ngIf="router.url == '/'"></app-search-music>
+<router-outlet *ngIf="router.url != ':id'"></router-outlet>
+

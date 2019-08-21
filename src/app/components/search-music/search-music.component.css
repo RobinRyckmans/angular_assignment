@@ -1,0 +1,41 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+#search {
+  width: 15%;
+  margin-bottom: 3%;
+}
+
+.table-container {
+  width: 400px;
+  border: solid 1px grey;
+}
+
+.table-row {
+  padding: 5px;
+}
+
+.table-img {
+  width: 60px;
+  align-self: center;
+  padding: 0;
+}
+
+.table-artist-name {
+  width: 60px;
+}
+
+.table-track-name {
+  width: 240px;
+}
+
+.table-details {
+  width: 40px;
+}
+
+td {
+  border: solid 1px;
+}

@@ -1,0 +1,19 @@
+<div class="search-container">
+  <input id="search" type="text" [(ngModel)]="searchResult" (keyup)="searchSongs()">
+  <label *ngIf="searchResult == ''; else searching">Please type in a filter...</label>
+  <ng-template *ngIf="songs?.resultCount == 0" #searching>
+    <label>Searching</label>
+  </ng-template>
+</div>
+
+<div *ngIf="songs?.resultCount > 0 && searchResult != ''">
+  <table class="table-container" *ngFor="let song of songs.results">
+<!--    <label>{{song.artistName}}</label>-->
+    <tr class="table-row">
+      <td class="table-img"><img src="{{song.artworkUrl60}}" alt="Image of {{song.artistName}}'s song {{song.trackName}}"></td>
+      <td class="table-artist-name">{{song.artistName}}</td>
+      <td class="table-track-name">{{song.trackName}}</td>
+      <td class="table-details"><a routerLink="/{{song.trackId}}" routerLinkActive="active" (click)="setActiveSong(song)">Details</a></td>
+    </tr>
+  </table>
+</div>
