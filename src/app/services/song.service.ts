@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs';
+import {Observable} from 'rxjs';
 import {SongSearchResult} from '../model/SongSearchResult';
-import {HttpClient, HttpClientJsonpModule} from '@angular/common/http';
-import {map} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
 import {SongSearchResults} from '../model/SongSearchResults';
 
 @Injectable({
